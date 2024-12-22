@@ -10,6 +10,7 @@ public class Ex04TaxiMeter {
         System.out.print("======================================" +
                 "\nKatedilen Mesafeyi Km Cinsinden giriniz: ");
         double km = scan.nextDouble();
+        scan.close();
         total = (perKM * km) + openingAmount;
         total = (total < 20) ? 20 : total;
         System.out.format("Ödenecek tutar = %.2f\n======================================", total);
