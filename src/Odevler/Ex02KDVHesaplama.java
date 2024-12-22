@@ -2,7 +2,7 @@ package Odevler;
 
 import java.util.Scanner;
 
-public class Odev02KDVHesaplama {
+public class Ex02KDVHesaplama {
     public static void main(String[] args) {
         //para değeri al
         Scanner scan = new Scanner(System.in);

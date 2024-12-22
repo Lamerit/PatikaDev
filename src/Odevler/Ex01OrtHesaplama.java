@@ -3,7 +3,7 @@ package Odevler;
 import java.util.Scanner;
 
 
-public class Oden01OrtHesaplama {
+public class Ex01OrtHesaplama {
 
 
     public static void main(String[] args) {
