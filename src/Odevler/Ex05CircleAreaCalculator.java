@@ -13,5 +13,6 @@ public class Ex05CircleAreaCalculator {
         double area=3.14*(r*r);
         double perimeter=2*(3.14*r);
         System.out.printf("Area Of The Circle = %.2f\nPerimeter Of The Circle = %.2f", area,perimeter);
+    scan.close();
     }
 }

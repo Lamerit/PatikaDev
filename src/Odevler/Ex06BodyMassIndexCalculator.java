@@ -28,6 +28,6 @@ public class Ex06BodyMassIndexCalculator {
             System.out.println("You are overweight.");
         } else {
             System.out.println("You are obese.");
-        }
+        }scan.close();
     }
 }

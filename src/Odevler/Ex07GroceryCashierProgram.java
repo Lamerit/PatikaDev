@@ -1,3 +1,5 @@
+package Odevler;
+
 import java.util.Scanner;
 
 public class Ex07GroceryCashierProgram {
@@ -33,6 +35,6 @@ public class Ex07GroceryCashierProgram {
             totalPrice += weight * prices[i];
         }
         System.out.println(totalPrice);
-
+scan.close();
     }
 }

@@ -15,6 +15,6 @@ public class Odev02KDVHesaplama {
         System.out.println("KDV'siz Tutar= " + girilenTutar +
                 "\nKDV'li Tutar= " + kDVliFiyat +
                 "\nKDV Tutarı= " + kDVTutari);
-
+scan.close();
     }
 }

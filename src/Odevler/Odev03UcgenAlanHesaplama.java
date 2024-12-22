@@ -10,5 +10,6 @@ public class Odev03UcgenAlanHesaplama {
         System.out.print("Taban Kenarı Giriniz: ");
         double tabanKenar=scan.nextInt();
         System.out.println("Üçgenin Alanı: " + (dikKenar*tabanKenar/2));
+        scan.close();
     }
 }
