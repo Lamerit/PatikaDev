@@ -1,38 +1,9 @@
-Java ile kullanıcıdan doğum tarihini alıp Çin Zodyağı değerini hesaplayan program yazınız.
+Artık Yıl Nasıl Hesaplanır?
 
-Çin Zodyağı nedir?
+Genel bir kural olarak, artık yıllar 4 rakamının katı olan yıllardır:
 
-4000 bin yıldır kullanılan bir astroloji çeşididir Çin astrolojisi ve insanları 12 değişik burç ve sembollerle tanımlar. Çin Zodyağı bu 12 burcun eşit aralıklarla(10 derece genişliğinde) sıralandığı bir hayvan halkasıdır ve yıldızlarla pek bir ilgisi yoktur.
+1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020, 2024 gibi.
+100'ün katı olan yıllardan sadece 400'e kalansız olarak bölünebilenler artık yıldır:
 
-Çin Zodyağı nasıl hesaplanır?
-
-Çin zodyağı hesaplanırken kişinin doğum yılının 12 ile bölümünde kalana göre bulunur.
-
-Doğum Tarihi %12 = 0 ➜ Maymun
-
-Doğum Tarihi %12 = 1 ➜ Horoz
-
-Doğum Tarihi %12 = 2 ➜ Köpek
-
-Doğum Tarihi %12 = 3 ➜ Domuz
-
-Doğum Tarihi %12 = 4 ➜ Fare
-
-Doğum Tarihi %12 = 5 ➜ Öküz
-
-Doğum Tarihi %12 = 6 ➜ Kaplan
-
-Doğum Tarihi %12 = 7 ➜ Tavşan
-
-Doğum Tarihi %12 = 8 ➜ Ejderha
-
-Doğum Tarihi %12 = 9 ➜ Yılan
-
-Doğum Tarihi %12 = 10 ➜ At
-
-Doğum Tarihi %12 = 11 ➜ Koyun
-
-Senaryo
-
-Doğum Yılınızı Giriniz : 1990
-Çin Zodyağı Burcunuz : At
+Örneğin 1200, 1600, 2000 yılları artık yıldır ancak 1700, 1800 ve 1900 artık yıl değildir.
+Sadece 400'e tam olarak bölünebilenlerin artık yıl kabul edilmesinin nedeni, bir astronomik yılın 365,25 gün değil, yaklaşık olarak 365,242 gün olmasından kaynaklanan hatayı gidermektir.
