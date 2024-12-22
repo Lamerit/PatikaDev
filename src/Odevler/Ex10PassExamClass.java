@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Ex10PassExamClass {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int mat,psychics, sports;
+        double mat,psychics, sports;
         System.out.println("Matematik Notunuz: ");
-        mat= scan.nextInt();
+        mat= scan.nextDouble();
         System.out.println("Fizik Notunuz: ");
-        psychics= scan.nextInt();
+        psychics= scan.nextDouble();
         System.out.println("Spor Dersi Notunuz: ");
-        sports= scan.nextInt();
+        sports= scan.nextDouble();
         double average= (mat+psychics+sports)/3;
         if (average>=50){
-            System.out.println("Geçtiniz Tebrikler!");
+            System.out.println("Ortalamanız: " + average + " Geçtiniz Tebrikler!");
         }else {
             System.out.println("Sınıfta Kaldınız!.");
         }
