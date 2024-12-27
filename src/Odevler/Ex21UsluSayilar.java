@@ -1,6 +1,4 @@
 package Odevler;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Ex21UsluSayilar {
