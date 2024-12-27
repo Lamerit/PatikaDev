@@ -13,7 +13,6 @@ public class Ex16LeapYearCalculator {
         } else {
             System.out.println(year + " Yılı Artık Bir Yıl Değildir.");
         }
-
         scan.close();
     }
 }
