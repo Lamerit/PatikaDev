@@ -6,36 +6,42 @@ public class Ex22ArmstrongNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Sayı Giriniz :");
-        int sayi = scan.nextInt();
-        int basamakSayisi = 0;
-        int geciciSayi = sayi;
-        int basamaktakiDeger;
-        int armstrongSonuc = 0;
-        int basamakGucu;
+        int girilenSayi = scan.nextInt(); // Kullanıcıdan sayı al
+        int basamakSayisi = 0; // Basamak sayısını tutan değişken
+        int geciciSayi = girilenSayi; // Sayıyı geçici olarak saklamak
+        int basamakTabani; // Her bir basamağın değerini tutacak değişken
+        int basamakTabanSonuc; // Basamak tabanı üssünün çarpımını tutan değişken
+        int toplam = 0; // Armstrong kontrolü için basamak üsleri toplamı
 
-        // Basamak sayıs
+        // Basamak sayısını bulma
         while (geciciSayi != 0) {
-            geciciSayi /= 10;
+            geciciSayi = geciciSayi / 10;
             basamakSayisi++;
         }
+        geciciSayi = girilenSayi; // Sayıyı tekrar başa al
 
-        // Armstrong
-        geciciSayi = sayi;
+        // Her bir basamağı işleme
         while (geciciSayi != 0) {
-            basamaktakiDeger = geciciSayi % 10;
-            // Basamağın üssünü hesaplama
-            basamakGucu = 1;
-            for (int i = 1; i <= basamakSayisi; i++) {
-                basamakGucu *= basamaktakiDeger;
+            basamakTabani = geciciSayi % 10; // Son basamağı al
+            // Basamak üssü hesaplama
+            basamakTabanSonuc = 1; // Çarpım için 1 ile başlat
+            for (int i = 0; i < basamakSayisi; i++) { // Basamak sayısı kadar üs al
+                basamakTabanSonuc *= basamakTabani;
             }
-            armstrongSonuc += basamakGucu;
-            geciciSayi /= 10;
+            System.out.println("Basamak üssü sonucu: " + basamakTabani + "^" + basamakSayisi+ "=" + basamakTabanSonuc);
+
+            // Toplama ekle
+            toplam += basamakTabanSonuc;
+
+            // Sayıyı bir basamak düşür
+            geciciSayi = geciciSayi / 10;
         }
-        //sonuc
-        if (armstrongSonuc == sayi) {
-            System.out.println(sayi + " sayısı bir Armstrong sayıdır.");
+
+        // Sonuç kontrolü
+        if (toplam == girilenSayi) {
+            System.out.println(girilenSayi + " sayısı bir Armstrong sayıdır.");
         } else {
-            System.out.println(sayi + " sayısı bir Armstrong sayısı değildir.");
+            System.out.println(girilenSayi + " sayısı bir Armstrong sayısı değildir.");
         }
 
         scan.close();
