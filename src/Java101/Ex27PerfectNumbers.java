@@ -1,7 +1,7 @@
 package Java101;
 import java.util.Scanner;
 
-public class Ex26PerfectNumbers {
+public class Ex27PerfectNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Bir sayı giriniz: ");
