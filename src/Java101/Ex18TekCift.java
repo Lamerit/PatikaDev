@@ -17,7 +17,6 @@ public class Ex18TekCift {
                 toplam+=girilenSayi;
             }
         } while (girilenSayi % 2 == 0);
-
         System.out.print("Toplam= " + toplam);
     }
 
