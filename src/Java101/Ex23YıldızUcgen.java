@@ -1,4 +1,4 @@
-package Odevler;
+package Java101;
 import java.util.Scanner;
 public class Ex23YıldızUcgen {
     public static void main(String[] args) {

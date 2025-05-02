@@ -1,4 +1,4 @@
-package Odevler;
+package Java101;
 import java.util.Scanner;
 
 public class Ex06BodyMassIndexCalculator {
