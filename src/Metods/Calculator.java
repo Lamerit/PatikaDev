@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Calculator {
     public static void sum(Scanner scan) {
         int result = 0;
-        int i=1;
-       while(true){
+        int i = 1;
+        while (true) {
             System.out.print(i + ". Sayıyı giriniz: " + "(Çıkmak İçin 0)" + "\n");
-            int newNumber=scan.nextInt();
+            int newNumber = scan.nextInt();
             i++;
             if (newNumber == 0) {
                 break;
             }
-            result+=newNumber;
+            result += newNumber;
 
         }
         System.out.println("Toplam = " + result);
@@ -22,11 +22,12 @@ public class Calculator {
     public static void minus(Scanner scan) {
         System.out.print("1. Sayıyı giriniz: ");
         int result = scan.nextInt(); // ilk sayı result olarak ayarlandı
+        int i = 1;
 
-        for (int i = 2; i < 20; i++) {
+        while (true) {
             System.out.print(i + ". Sayıyı giriniz (Çıkmak için 0): ");
             int newNumber = scan.nextInt();
-
+            i++;
             if (newNumber == 0) {
                 break;
             }
