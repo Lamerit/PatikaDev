@@ -14,7 +14,6 @@ public class Calculator {
                 break;
             }
             result += newNumber;
-
         }
         System.out.println("Toplam = " + result);
     }
@@ -106,6 +105,31 @@ public class Calculator {
         System.out.println("Sonuç : " + result);
     }
 
+    // MOD ALMA METODU
+    static void mod(Scanner scan) {
+        System.out.print("Mod alınacak sayıyı giriniz: ");
+        int number = scan.nextInt();
+        System.out.print("Mod değerini giriniz: ");
+        int mod = scan.nextInt();
+
+        int result = number % mod;
+        System.out.println(number + " % " + mod + " = " + result);
+    }
+
+    // DİKDÖRTGEN ALAN VE ÇEVRE METODU
+    static void rectangle(Scanner scan) {
+        System.out.print("Dikdörtgenin uzun kenarını giriniz: ");
+        int uzunKenar = scan.nextInt();
+        System.out.print("Dikdörtgenin kısa kenarını giriniz: ");
+        int kisaKenar = scan.nextInt();
+
+        int alan = uzunKenar * kisaKenar;
+        int cevre = 2 * (uzunKenar + kisaKenar);
+
+        System.out.println("Dikdörtgen Alanı = " + alan);
+        System.out.println("Dikdörtgen Çevresi = " + cevre);
+    }
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -143,6 +167,12 @@ public class Calculator {
                     break;
                 case 6:
                     factorial(scan);
+                    break;
+                case 7:
+                    mod(scan);
+                    break;
+                case 8:
+                    rectangle(scan);
                     break;
                 case 0:
                     break;
