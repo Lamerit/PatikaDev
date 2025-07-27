@@ -1,14 +1,14 @@
 package Metods;
 
 public class RecursiveMetodsPower {
-    public static int power(int base, int exponent){
-        if (exponent==0){
+    public static int üs(int sayi, int üs){
+        if (üs ==0){
             return 1;
         }
-        return base*power(base, exponent -1);
+        return sayi * üs(sayi, üs -1);
     }
 
     public static void main(String[] args) {
-        System.out.println(power(2,3));
+        System.out.println(üs(2,0));
     }
 }
