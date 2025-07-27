@@ -3,39 +3,40 @@ package Metods;
 import java.util.Scanner;
 
 public class Calculator {
-    public static int sum(Scanner scan) {
+    public static void sum(Scanner scan) {
         int result = 0;
-        int newNumber = 0;
-        for (int i = 1; i < 20; i++) {
-            System.out.print(i + ". Sayıyı giriniz: " + "(Çıkmak İçin 0)" + "\n\n");
-            newNumber = scan.nextInt();
-            result += newNumber;
+        int i=1;
+       while(true){
+            System.out.print(i + ". Sayıyı giriniz: " + "(Çıkmak İçin 0)" + "\n");
+            int newNumber=scan.nextInt();
+            i++;
             if (newNumber == 0) {
                 break;
             }
+            result+=newNumber;
+
         }
         System.out.println("Toplam = " + result);
-        return result;
     }
 
-    public static int minus(Scanner scan) {
+    public static void minus(Scanner scan) {
+        System.out.print("1. Sayıyı giriniz: ");
+        int result = scan.nextInt(); // ilk sayı result olarak ayarlandı
 
-        int result = 0;
-        int newNumber = 0;
-        System.out.print("1. Sayıyı giriniz: " + "\n");
-        result = scan.nextInt();
         for (int i = 2; i < 20; i++) {
-            System.out.print(i + ". Sayıyı giriniz: " + "(Çıkmak İçin 0)" + "\n");
-            newNumber = scan.nextInt();
-            result= newNumber;
+            System.out.print(i + ". Sayıyı giriniz (Çıkmak için 0): ");
+            int newNumber = scan.nextInt();
+
             if (newNumber == 0) {
-                System.out.println("Çıkarma İşlemi Sonucu= " + result + "\n\n");
                 break;
             }
+
+            result -= newNumber; // her yeni sayı çıkarılıyor
         }
 
-        return result;
+        System.out.println("Çıkarma İşlemi Sonucu = " + result + "\n");
     }
+
     static void times(Scanner scan) {
         int number, result = 1, i = 1;
 
