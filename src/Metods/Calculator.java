@@ -27,7 +27,7 @@ public class Calculator {
         for (int i = 2; i < 20; i++) {
             System.out.print(i + ". Sayıyı giriniz: " + "(Çıkmak İçin 0)" + "\n");
             newNumber = scan.nextInt();
-            result = newNumber - result;
+            result= newNumber;
             if (newNumber == 0) {
                 System.out.println("Çıkarma İşlemi Sonucu= " + result + "\n\n");
                 break;
